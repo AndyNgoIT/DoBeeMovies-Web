@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DoBee Login</title>
+    <style>
+        div.container {
+            flex: 1;
+            background: #ffffff;
+            color: black;
+            text-align: center;
+            margin-top: 8em;
+        }
+        div.container div.login-box {
+             border: 1px solid gray;
+             border-radius: 10px;
+             background: powderblue;
+             display: inline-block;
+             padding: 25px;
+             width: 22em;
+            
+        }
+        div.container div.login-box div.login {
+            display: block;
+            padding: 1.5em;
+            
+        }
+        div.container div.login-box div.login input#txt {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            margin-right: 2em;
+            width: 15em;
+            margin-bottom: 1em;
+        }
+        div.container div.login-box div.login input#pass {
+            display: inline;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            margin-right: 2em;
+            width: 13em;
+            margin-bottom: 1em;
+            
+        }
+        div.container div.login-box div.login input#btn {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 20px;     
+            cursor: pointer; 
+            width: 15em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+             <h1>DoBee Movies</h1>
+            <div class="login">
+                <span style="margin-right: 5px;">Email: </span>
+                <input type="email" name="" id="txt" value="gmail@nbdong.com">
+                <span style="margin-right: 5px; display: inline-block;">Mật Khẩu: </span>
+                <input type="password" name="" id="pass" value="dobee">
+                <input type="button" value="Đăng Nhập" id="btn">
+            </div>
+            <div class="other-login">
+                <aside class="other">
+                   <input type="button" value="" id="fb">
+                   <input type="button" value="" id="gg">
+                </aside>
+                <aside class="reg">
+                   <span>Bạn chưa có tài khoản ?
+                       <a href="http://dobee.com/login" target="_blank">Đăng Ký Ngay</a>
+                   </span>
+                </aside>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
