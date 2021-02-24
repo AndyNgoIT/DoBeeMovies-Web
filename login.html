@@ -3,81 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>DoBee Login</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>DobeeMovies</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background: #ffffff;
-        }
-        div.container {
-            background: #ffffff;
-            color: black;
-            text-align: center;
-            margin-top: 8em;
-        }
-        div.container div.login-box {
-             border: 1px solid gray;
-             border-radius: 10px;
-             background: powderblue;
-             display: inline-block;
-             padding: 25px;
-             width: 22em;
-            
-        }
-        div.container div.login-box div.login {
-            display: block;
-            padding: 1.5em;
-            
-        }
-        div.container div.login-box div.login input#txt {
-            padding: 10px;
-            border: 1px solid gray;
-            border-radius: 15px;
-            margin-right: 2em;
-            width: 15em;
-            margin-bottom: 1em;
-        }
-        div.container div.login-box div.login input#pass {
-            display: inline;
-            padding: 10px;
-            border: 1px solid gray;
-            border-radius: 15px;
-            margin-right: 2em;
-            width: 13em;
-            margin-bottom: 1em;
-            
-        }
-        div.container div.login-box div.login input#btn {
-            padding: 10px;
-            border: 1px solid gray;
-            border-radius: 20px;     
-            cursor: pointer; 
-            width: 15em;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+       * {
+           margin: 0;
+           padding: 0;
+       }
+       body {
+           font-family: 'Roboto', sans-serif;
+           background-color: #fff;
+       }
+       .container {
+           display: inline-block;
+           margin: 5rem;
+       }
+       .box {
+           background-color: #accbe3;
+           padding: 30px;
+           border: 1px solid #000;
+           border-radius: 10px;
+       }
+       #login .login-header {
+           text-align: center;
+           padding: 20px;
+           margin: -30px;
+           margin-bottom: 10px;
+       }
+       #login .row {
+           margin: 20px 0;
+       }
+       #login label {
+           display: block;
+           margin-bottom: 2px;
+       }
+       #login input[type=text], input[type=password] {
+           padding: 7px;
+           font-size: 1em;
+           width: 100%;
+           border: none;
+           border-bottom: 2px solid #001f45;
+           background: transparent;
+       }
+       #login input[type=button] {
+           padding: 7px;
+           font-size: 16px;
+           font-weight: bold;
+           width: 100%;
+           text-align: center;
+       }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="login-box">
-             <h1>DoBee Movies</h1>
-            <div class="login">
-                <span style="margin-right: 5px;">Email: </span>
-                <input type="email" name="" id="txt" value="gmail@nbdong.com">
-                <span style="margin-right: 5px; display: inline-block;">Mật khẩu: </span>
-                <input type="password" name="" id="pass" value="dobee">
-                <input type="button" value="Đăng Nhập" id="btn">
+        <div class="box" id="login">
+            <div class="login-header">
+                <a href="javascript:void(0)">
+                    <img src="./assets/images/logo-dobee.png" alt="logo-dobeeteam" width="100px" height="100px" 
+                    style="border-radius: 50px">
+                </a>
+                <h2>Dobee Movies</h2>
             </div>
-            <div class="other-login">
-                <aside class="other">
-                   <input type="button" value="" id="fb">
-                   <input type="button" value="" id="gg">
-                </aside>
-                <aside class="reg">
-                   <span>Bạn chưa có tài khoản ?
-                       <a href="http://dobee.com/login" target="_blank">Đăng Ký Ngay</a>
-                   </span>
-                </aside>
+            <form action="login" method="get" id="fm1">
+                 <section class="row">
+                     <label>Email: </label>
+                     <input type="text" name="text" placeholder="name@example.com">
+                 </section>
+                 <section class="row">
+                     <label>Mật Khẩu: </label>
+                     <input type="password" name="password" placeholder="password">
+                 </section>
+                 <div>
+                     <input type="button" value="Đăng Nhập">
+                 </div>
+            </form>
+            <div class="login-footer">
+                <section class="regist">
+                    <div>
+                        <span>Bạn chưa có tài khoản ?</span>
+                        <a href="javascript:void(0)">Đăng ký ngay !</a>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
